@@ -1,6 +1,8 @@
+const { barangService } = require('../services');
+
 async function getBarangs(req, res) {
-    console.log("masuk ke path /");
-    res.json({ name : 'OK'});
+    const barangs = await barangService.getAllBarangs();
+    res.status(200).json(barangs);
 }
 
 module.exports = {
