@@ -1,3 +1,4 @@
+// const { prisma } = require('../config/prisma1');
 const { prisma } = require('../config/prisma');
 
 async function getAllBarangs() {
